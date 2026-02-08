@@ -1,11 +1,16 @@
-.ibm-plex-mono-medium {
+#welcome {
+  font-size: 96px;
+  align-items: center;
+  margin: auto;
+  color: white;
+
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
+  font-weight: 800;
   font-style: normal;
 }
 
 .background-box {
-  background: linear-gradient(135deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  background: linear-gradient(135deg, oklch(43.336% 0.19745 324.353) 0%, oklch(0.51 0.22 28.43) 50%, oklch(0.76 0.2 61.29) 100%);
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -15,25 +20,69 @@
 .top-box {
   background: rgba(160, 155, 155, 0.7);
   height: 20vh;
-  width: 96vw;
+  width: 90vw;
   margin: 2vh 2vw;
   display: flex;
   border-radius: 100px;
+  padding: 2vh 2vw;
 }
 
 .bottom-box {
   background: rgba(44, 42, 42, 0.7);
   height: 70vh;
-  width: 96vw;
+  width: 90vw;
   margin: 2vh 2vw;
   display: flex;
+  flex-direction: row;
   border-radius: 100px;
+  padding: 2vh 2vw;
+}
+
+.image-section {
+  width: 40vw;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-photo {
+  object-fit: contain;
+  padding: 2vh;
+  border-radius: 50px;
+}
+
+.image-boxes {
+  align-self: center;
+  object-fit: contain;
+  justify-content: center;
 }
 
 .image-links {
-  padding: 4vh 2vw;
-  height: 10vh;
-  object-fit: contain;
+  padding: 2vh 2vw;
+  height: 6vh;
+}
+
+.image-boxes:hover {
+  background: linear-gradient(135deg, #001d6c 0%, #6929c4 100%);
+  border-radius: 20px;
+}
+
+.text {
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 36px;
+}
+
+a {
+  color: #0f62fe;
+}
+
+a:hover {
+  background: linear-gradient(135deg, #001d6c 0%, #6929c4 100%);
+  border-radius: 5px;
+  color: white;
 }
 
 body {
