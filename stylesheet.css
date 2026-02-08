@@ -17,13 +17,16 @@
   flex-direction: column;
 }
 
+.rounded-border {
+  border-radius: 100px;
+}
+
 .top-box {
   background: rgba(160, 155, 155, 0.7);
   height: 20vh;
   width: 90vw;
   margin: 2vh 2vw;
   display: flex;
-  border-radius: 100px;
   padding: 2vh 2vw;
 }
 
@@ -34,7 +37,6 @@
   margin: 2vh 2vw;
   display: flex;
   flex-direction: row;
-  border-radius: 100px;
   padding: 2vh 2vw;
 }
 
